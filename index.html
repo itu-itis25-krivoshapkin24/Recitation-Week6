@@ -13,7 +13,12 @@
             function keydownFunction(){
                 document.getElementById("name").style.backgroundColor = "yellow";
             }
+            function keyupFunction(){
+                document.getElementById("name").style.backgroundColor = "lightblue";
+            }
         </script>
+
+        Enter your name: <input type="text" id="name" onkeydown = "keydownFunction()" onkeyup = "keyupFunction()">
 
         
         <p><strong>Introduction to Informational System</strong></p>
@@ -93,3 +98,4 @@ This web page is right for you! I hope you enjoy it.
 
     </body>
 </html>
+
