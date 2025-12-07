@@ -17,8 +17,8 @@
                 document.getElementById("name").style.backgroundColor = "lightblue";
             }
         </script>
-
-        <button onclick="pressedTheButton()" id="colorButtoon" >Change Colors</button>
+        
+        <button onclick="pressedTheButton()" id="colorButton" >Change Colors</button>
         
                 <script>
                     const colors = ['red', 'blue','green', 'gray'];
@@ -28,12 +28,11 @@
                 
                     function pressedTheButton(){
                         currentValue++;
-                        currentValue = colorValue % colors.length;
-                        button.style.backgroundColor = colors[colorIndex];
+                        currentValue = currentValue % colors.length;
+                        button.style.backgroundColor = colors[currentValue];
                     }
-                        
-                    button.addEventListener('click', changeButtonColor);
-                    }
+            
+                    
                 </script>
 
         Enter your name: <input type="text" id="name" onkeydown = "keydownFunction()" onkeyup = "keyupFunction()">
@@ -116,6 +115,7 @@ This web page is right for you! I hope you enjoy it.
 
     </body>
 </html>
+
 
 
 
