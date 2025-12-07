@@ -18,6 +18,16 @@
             }
         </script>
 
+        <button onclick="pressedTheButton()">Press Me!</button>
+                <script>
+                    let currentValue = 0;
+                
+                    function pressedTheButton(){
+                        currentValue = currentValue + 1;
+                        console.log(currentValue);
+                    }
+                </script>
+
         Enter your name: <input type="text" id="name" onkeydown = "keydownFunction()" onkeyup = "keyupFunction()">
 
         
@@ -98,4 +108,5 @@ This web page is right for you! I hope you enjoy it.
 
     </body>
 </html>
+
 
