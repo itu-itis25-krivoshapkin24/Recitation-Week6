@@ -18,13 +18,20 @@
             }
         </script>
 
-        <button onclick="pressedTheButton()">Press Me!</button>
+        <button onclick="pressedTheButton()">Change Colors</button>
+        <div id="myDisplay">0</div>
                 <script>
+                    const reactions = ['Wham!', 'Pow!','Boom!'];
+                    const myDisplay = document.getElementById('myDisplay');
                     let currentValue = 0;
                 
                     function pressedTheButton(){
-                        currentValue = currentValue + 1;
-                        console.log(currentValue);
+                        if(currentValue < reactions.length - 1){   
+                            currentValue = currentValue + 1;
+                        }else{
+                            currentValue = 0;
+                        }
+                        myDisplay.textContent = reactions[currentValue];
                     }
                 </script>
 
@@ -108,5 +115,6 @@ This web page is right for you! I hope you enjoy it.
 
     </body>
 </html>
+
 
 
